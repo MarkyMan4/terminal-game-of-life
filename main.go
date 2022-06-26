@@ -34,7 +34,7 @@ func printBoard() {
 		fmt.Printf("\033[2K")
 		for j := 0; j < len(board[i]); j++ {
 			if board[i][j] {
-				fmt.Printf("\033[2;0;41m")
+				fmt.Printf("\033[0;41m")
 				fmt.Print(aliveCell)
 			} else {
 				fmt.Print(deadCell)
